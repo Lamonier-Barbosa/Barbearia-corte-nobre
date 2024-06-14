@@ -33,3 +33,20 @@
     grid-column: 1/-1;
     margin-bottom: 20px;
 }
+
+.titulo-index {
+    background: linear-gradient(#1b1a1a, #000000);
+}
+
+.titulo-index h1 {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #ffffff;
+    padding: 600px 0px 200px 0px;
+    background-image: url("../../img/pagina-inicial/ferramentas.png");
+    width: auto;
+    box-shadow: 5px 5px #ffffff;
+}
