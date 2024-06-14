@@ -1,0 +1,224 @@
+.contato-container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    display: grid;
+    color: #f7f7f7;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+.titulo-do-contato {
+    box-sizing: border-box;
+    display: block;
+    color: #f7f7f7;
+    margin-bottom: 4rem;
+}
+
+.titulo-do-contato h1 {
+    font-size: 4rem;
+}
+
+.titulo-do-contato h2 {
+    font-size: 2rem;
+}
+
+.contatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background: #e3e3e3;
+    color: #a2a2a2;
+    border-radius: 5px;
+}
+
+.contato-dados {
+    grid-column: 1 / 3;
+    border-radius: 4px 0px 0px 4px;
+    background: #1b1a1a;
+    display: block;
+    padding: 60px;
+}
+
+
+.contatos h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a2a2a2;
+}
+
+.endereco {
+    display: block;
+    margin-top: 4rem;
+}
+
+.endereco p {
+    font-weight: bold;
+    font-style: normal;
+    padding-bottom: 0.6rem;
+    color: #a2a2a2;
+}
+
+.contato {
+    margin-top: 3rem;
+}
+
+.contato a {
+    display: flex;
+    margin-top: 1rem;
+    color: #a2a2a2;
+    font-weight: bold;
+    background: linear-gradient(#323232, #040404);
+    width: 10rem;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.contato a:hover {
+    cursor: pointer;
+    background: linear-gradient(#414141, #090909);
+    border-left: solid 2px #a2a2a2;
+}
+
+.contato-redes a {
+    display: inline-block;
+    margin-top: 4rem;
+    margin-right: 2rem;
+    color: #e3e3e3;
+}
+
+/* Formulário */
+
+.contato-formulario {
+    grid-column: 3 /-1;
+    position: relative;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem;
+    gap: 3rem;
+    color: #323232;
+}
+
+.form-nome {
+    grid-column: 1/-1;
+}
+
+.form-nome label {
+    font-size: 1.125rem;
+    font-weight: bold;
+    display: block;
+}
+
+.form-nome input {
+    margin-top: 0.5rem;
+    line-height: 2.5rem;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 2px transparent;
+    border-radius: 4px;
+    box-shadow: -4px 4px 15px #a2a2a2;
+    outline: none;
+    padding-left: 10px;
+    background: #ffffff;
+    font-size: 1rem;
+}
+
+.form-numero label {
+    font-size: 1.125rem;
+    font-weight: bold;
+    display: block;
+    grid-column: 1;
+}
+
+.form-numero input {
+    margin-top: 0.5rem;
+    line-height: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 2px transparent;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: -4px 4px 15px #a2a2a2;
+    outline: none;
+    padding-left: 10px;
+    background: #ffffff;
+    font-size: 1rem;
+}
+
+.form-horario label {
+    font-size: 1.125rem;
+    font-weight: bold;
+    display: block;
+}
+
+.form-horario input {
+    margin-top: 0.5rem;
+    line-height: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 2px transparent;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: -4px 4px 15px #a2a2a2;
+    outline: none;
+    padding-left: 10px;
+    background: #ffffff;
+    font-size: 1rem;
+}
+
+
+.form-pedido {
+    grid-column: 1/-1;
+}
+
+.form-pedido label {
+    font-size: 1.125rem;
+    font-weight: bold;
+    display: block;
+}
+
+.form-pedido textarea {
+    margin-top: 0.5rem;
+    line-height: 2rem;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: solid 2px transparent;
+    border-radius: 4px;
+    box-shadow: -4px 4px 15px #a2a2a2;
+    outline: none;
+    padding-left: 10px;
+    background: #ffffff;
+}
+
+.form textarea:focus-within {
+    border: solid 2px #414141;
+    box-shadow: -4px 4px 15px #414141;
+}
+
+
+.form-botao {
+    background: linear-gradient(#323232, #040404);
+    font-size: 1.125rem;
+    font-weight: bold;
+    grid-column: 1;
+    width: 250px;
+    height: 70px;
+    border-radius: 4px;
+    border: none;
+    color: #d7d7d7;
+    box-shadow: -4px 4px 15px #a2a2a2;
+}
+
+.form-botao:hover {
+    cursor: pointer;
+    box-shadow: -10px 10px 10px #a2a2a2;
+    background: linear-gradient(#414141, #090909);
+}
+
+.form input:focus-within {
+    border: solid 2px #414141;
+    box-shadow: -4px 4px 15px #414141;
+}

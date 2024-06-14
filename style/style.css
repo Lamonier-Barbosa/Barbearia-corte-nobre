@@ -1,0 +1,10 @@
+@import "./global.css";
+@import "./footer.css";
+
+/* Pagina Principal */
+@import "./header.css";
+@import "./pagina-principal/div-com-logo.css";
+@import "./pagina-principal/main-index.css";
+
+/* Contatos */
+@import "./contato.css/contatos.css";

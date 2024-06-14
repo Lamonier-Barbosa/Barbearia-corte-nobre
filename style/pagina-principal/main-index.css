@@ -1,0 +1,35 @@
+.article-inicial {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+}
+
+.conteudo-inicial {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.imagem-do-barbeiro {
+    width: 450px;
+}
+
+.texto {
+    font-size: 1.125rem;
+    padding-right: 20px;
+    font-weight: bold;
+    color: #f7f7f7;
+    align-content: center
+}
+
+.citacao {
+    align-content: start;
+    margin-top: 3rem;
+    text-align: center;
+    font-style: italic;
+    font-size: 2rem;
+    color: #c68c20;
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+}
