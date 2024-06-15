@@ -1,7 +1,8 @@
 .article-inicial {
     display: flex;
-    margin: 50px;
     justify-content: center;
+    padding-top: 100px;
+    background: #000000;
 }
 
 .conteudo-inicial {
@@ -39,14 +40,17 @@
 }
 
 .titulo-index h1 {
-    font-size: 3rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-wrap: wrap;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
     color: #ffffff;
-    padding: 600px 0px 200px 0px;
+    padding: 400px 0px 200px 0px;
     background-image: url("../../img/pagina-inicial/ferramentas.png");
-    width: auto;
     box-shadow: 5px 5px #ffffff;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
