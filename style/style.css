@@ -8,6 +8,14 @@
 @import "./pagina-principal/main-index.css";
 
 /* Contatos */
-@import "./contato.css/contatos.css";
+@import "./contato/contatos.css";
 
 /* Orçamento */
+@import "./orcamento/orcamento.css";
+@import "./orcamento/motivacao.css";
+
+/* Sobre */
+@import "./sobre/sobre.css";
+
+/* Galeria */
+@import "./galeria/galeria.css";

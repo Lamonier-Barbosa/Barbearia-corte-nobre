@@ -80,9 +80,9 @@
 }
 
 .botao-menu-index img {
+    display: flex;
     width: 150px;
     height: 100px;
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -90,9 +90,9 @@
 
 .botao-menu-index {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 20px;
     margin-bottom: 300px;
-    flex-wrap: wrap;
     gap: 150px;
     height: 60px;
     justify-content: center;
