@@ -19,3 +19,6 @@
 
 /* Galeria */
 @import "./galeria/galeria.css";
+
+/* Agracimentos */
+@import "./agradecimento/agradecimento.css"

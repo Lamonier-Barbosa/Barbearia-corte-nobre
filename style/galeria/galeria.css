@@ -50,7 +50,7 @@
 
 .galeria-container-fotos:hover {
     box-shadow: 0px 0px 40px #000000;
-    transition: 0.3s;
+    transition: 0.6s;
 }
 
 /* scroll */
@@ -60,7 +60,7 @@
 }
 
 .galeria-section:nth-child(odd) {
-    background-image: url("../../img/galeria/scroll/background-scroll.jpg");
+    background-image: url("../../img/background-scroll.jpg");
 }
 
 .scroll-container {
@@ -73,8 +73,20 @@
 .scroll-imagem {
     width: 400px;
     border-radius: 10px;
-    border: solid 4px #010101;
+    border: none;
     margin: 20px;
+}
+
+.img1 {
+    box-shadow: 0 0 30px #434343;
+}
+
+.img2 {
+    box-shadow: 0 0 30px #010101;
+}
+
+.img3 {
+    box-shadow: 0 0 30px #434343;
 }
 
 .scroll1 {
@@ -123,7 +135,7 @@
 @keyframes slidein1 {
     from {
         opacity: 0;
-        translate: -30vw 0;
+        translate: -10vw 0;
     }
 
     to {
@@ -135,7 +147,7 @@
 @keyframes slidein2 {
     from {
         opacity: 0;
-        translate: +30vw 0;
+        translate: +10vw 0;
     }
 
     to {
@@ -147,7 +159,7 @@
 @keyframes slidein3 {
     from {
         opacity: 0;
-        translate: -30vw 0;
+        translate: -10vw 0;
     }
 
     to {
@@ -156,7 +168,51 @@
     }
 }
 
+/*  Depoimento */
 
-/* .galeria-container-fotos .fechar-foto:target {
-    display: block;
-} */
+.depoimento-bg {
+    background: #f7f7f7;
+}
+
+.depoimento-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.depoimento-foto {
+    padding: 30px 0px 60px 0px;
+}
+
+.depoimento-foto h1 {
+    padding-bottom: 10px;
+    font-size: 3rem;
+}
+
+.depoimento-foto img {
+    border-radius: 30px;
+    width: 500px;
+}
+
+.depoimento-comentarios {
+    padding: 80px 0px 0px 0px;
+}
+
+.aspas {
+    font-size: 100px;
+    line-height: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #635903;
+}
+
+.depoimento-texto {
+    padding: 0px 0px 20px 6px;
+    font-size: 1.125rem;
+    color: #292929;
+}
+
+.nome-cliente {
+    padding: 10px 0px 80px 6px;
+}
