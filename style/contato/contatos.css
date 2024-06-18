@@ -1,4 +1,4 @@
-.main-footer {
+.main-contato {
     background: #040404;
 }
 
@@ -15,7 +15,6 @@
 
 .titulo-do-contato {
     box-sizing: border-box;
-    display: block;
     color: #f7f7f7;
     margin-bottom: 4rem;
 }
@@ -109,7 +108,6 @@
 
 .contato-formulario {
     grid-column: 3 /-1;
-    position: relative;
 }
 
 .form-nome {
@@ -131,7 +129,6 @@
     border-radius: 4px;
     box-shadow: -4px 4px 15px #a2a2a2;
     outline: none;
-    padding-left: 10px;
     background: #ffffff;
     font-size: 1rem;
 }
@@ -152,7 +149,6 @@
     width: 100%;
     box-shadow: -4px 4px 15px #a2a2a2;
     outline: none;
-    padding-left: 10px;
     background: #ffffff;
     font-size: 1rem;
 }
@@ -172,7 +168,6 @@
     width: 100%;
     box-shadow: -4px 4px 15px #a2a2a2;
     outline: none;
-    padding-left: 10px;
     background: #ffffff;
     font-size: 1rem;
 }
@@ -198,7 +193,6 @@
     border-radius: 4px;
     box-shadow: -4px 4px 15px #a2a2a2;
     outline: none;
-    padding-left: 10px;
     background: #ffffff;
 }
 
@@ -242,10 +236,6 @@
         font-size: 1rem;
     }
 
-    /* .form-horario {
-        grid-column: 1;
-    } */
-
     .form-horario,
     .form-numero {
         grid-column: 1/-1;
@@ -263,10 +253,10 @@
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 700px) {
 
     .titulo-do-contato {
-        width: 100px;
+        margin-bottom: 20px;
     }
 
     .titulo-do-contato h1 {
@@ -280,8 +270,59 @@
     .contatos {
         display: grid;
         grid-template-columns: 1fr;
-        background: #e3e3e3;
-        color: #a2a2a2;
-        border-radius: 5px;
+    }
+
+    .contato-dados {
+        display: grid;
+        padding: 20px;
+    }
+
+    .contato-dados h1 {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .endereco {
+        display: flex;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    .endereco,
+    .contato {
+        margin-top: 1.5rem;
+        justify-self: center;
+        padding: 0px;
+    }
+
+    .contato-redes {
+        justify-self: center;
+        display: flex;
+        gap: 40px;
+    }
+
+    .contato-redes a {
+        margin-right: 0px;
+        margin-top: 1.5rem;
+    }
+
+    .contato-formulario {
+        grid-column: 1;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .form-botao {
+        justify-self: center;
+        width: 150px;
+    }
+
+    .form input,
+    .form textarea {
+        font-size: 0.8rem;
     }
 }
