@@ -3,6 +3,7 @@
     justify-content: center;
     padding-top: 100px;
     background: #000000;
+    padding: 0 20px 0 20px;
 }
 
 .conteudo-inicial {
@@ -12,16 +13,39 @@
     gap: 20px;
 }
 
+.titulo-index {
+    background: linear-gradient(#1b1a1a, #000000);
+}
+
+.titulo-index h1 {
+    display: flex;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    color: #ffffff;
+    padding: 400px 20px 200px 20px;
+    background-image: url("../../img/pagina-inicial/ferramentas.png");
+    box-shadow: 5px 5px #ffffff;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .imagem-do-barbeiro {
     width: 450px;
+    padding-top: 40px;
 }
 
 .texto {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
     padding-right: 20px;
     font-weight: bold;
-    color: #f7f7f7;
-    align-content: center
+    color: #d2d2d2;
+    align-content: center;
+    padding-top: 15px;
 }
 
 .citacao {
@@ -30,27 +54,43 @@
     text-align: center;
     font-style: italic;
     font-size: 2rem;
-    color: #c68c20;
+    color: #635903;
     grid-column: 1/-1;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
-.titulo-index {
-    background: linear-gradient(#1b1a1a, #000000);
+
+@media (max-width: 900px) {
+    .texto {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
 }
 
-.titulo-index h1 {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 3rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    color: #ffffff;
-    padding: 400px 0px 200px 0px;
-    background-image: url("../../img/pagina-inicial/ferramentas.png");
-    box-shadow: 5px 5px #ffffff;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+@media (max-width: 800px) {
+    .texto {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .texto {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .titulo-index h1 {
+        padding: 200px 20px 100px 20px;
+
+    }
+
+    .texto {
+        padding-top: 15px;
+        font-size: 13px;
+        line-height: 1rem;
+        font-weight: 100;
+    }
 }

@@ -1,12 +1,13 @@
 .header-index {
     background: #1b1a1a;
-    box-shadow: 0px -400px inset #f7f7f7;
+    box-shadow: 0px -450px inset #f7f7f7;
+    padding: 100px 0 0 0px;
+    margin-bottom: 150px;
 }
 
 .header-container-index {
     max-width: 1200px;
-    margin: auto;
-    padding-top: 100px;
+    margin: 0 auto;
 }
 
 .introducao-header {
@@ -19,7 +20,8 @@
 }
 
 .titulo-header h1 {
-    margin-bottom: 70px;
+    padding-top: 50px;
+    margin-bottom: 30px;
     font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #a2a2a2;
@@ -38,7 +40,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 13px;
     color: #010101;
-    padding-left: 3px;
+    line-height: 3rem;
 }
 
 .imagem-de-capa {
@@ -51,53 +53,27 @@
     box-shadow: 10px 10px 10px #252525;
 }
 
-/* .frase-de-efeito {
-    grid-column: 1/-1;
-    text-align: center;
-    font-size: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    padding-top: 40px;
-    color: #252525;
-} */
-
-.sobre img {
-    width: 150px;
-}
-
-.galeria img {
-    padding-left: 20px;
-    width: 150px;
-}
-
-.contato-index img {
-    width: 150px;
-}
-
-.orcamento img {
-    padding-left: 20px;
-    width: 150px;
+.botao-menu-index {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 100px 0 100px 0;
+    gap: 10px;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 20px 0 20px;
 }
 
 .botao-menu-index img {
     display: flex;
-    width: 150px;
     height: 100px;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    max-width: 150px;
 }
 
-.botao-menu-index {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    margin-bottom: 300px;
-    gap: 150px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-}
 
 .botao-menu-index a {
     display: inline-block;
@@ -109,11 +85,161 @@
     padding: 15px;
     width: 150px;
     text-align: center;
-    box-shadow: 10px 10px 10px #a2a2a2;
+    box-shadow: 0 0 15px #6a6a6a;
 }
 
 
 .botao-menu-index a:hover {
-    box-shadow: 10px 10px 10px #313131;
+    box-shadow: 0 0 20px #1e1e1e;
     background: linear-gradient(#414141, #090909);
+}
+
+
+@media (max-width: 1200px) {
+
+    .titulo-header h1 {
+        font-size: 2rem;
+    }
+
+    .titulo-header h1 strong {
+        font-size: 4rem
+    }
+
+    .header-index {
+        box-shadow: 0px -520px inset #f7f7f7;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header-index {
+        box-shadow: 0px -450px inset #f7f7f7;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .botao-menu-index {
+        margin: 10px 0 100px 0;
+        gap: 10px;
+        height: 60px;
+    }
+
+    .botao-menu-index img {
+        width: 100px;
+    }
+
+    .botao-menu-index a {
+        display: inline-block;
+        font-size: 1rem;
+        border-radius: 4px;
+        padding: 15px;
+        width: 100px;
+    }
+
+
+    .titulo-header h1 {
+        font-size: 1.3rem;
+    }
+
+    .titulo-header h1 strong {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .header-endereco p {
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .header-index {
+        box-shadow: 0px -290px inset #f7f7f7;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-index {
+        margin-bottom: 270px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .titulo-header {
+        text-align: center;
+    }
+
+    .titulo-header h1 {
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #a2a2a2;
+        padding: 0;
+    }
+
+    .titulo-header h1 strong {
+        line-height: 4rem;
+        font-size: 3rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ffffff;
+    }
+
+    .header-endereco p {
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #a2a2a2;
+    }
+
+    .introducao-header {
+        grid-template-columns: 1fr;
+    }
+
+    .header-endereco p {
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+
+    .imagem-de-capa {
+        justify-self: center;
+    }
+
+    .imagem-de-capa img {
+        width: 400px;
+        border-radius: 100px;
+        box-shadow: 5px 5px 10px #252525;
+    }
+
+    .botao-menu-index {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    .botao-menu-index {
+        margin: 10px 0 100px 0;
+        gap: 10px;
+        height: 60px;
+    }
+
+    .botao-menu-index img {
+        width: 100px;
+    }
+
+    .botao-menu-index a {
+        font-size: 1rem;
+        width: 100px;
+    }
+}
+
+@media (max-width: 720px) {
+    .header-index {
+        box-shadow: 0px -240px inset #f7f7f7;
+    }
+}
+
+@media (max-width: 400px) {
+    .titulo-header h1 strong {
+        line-height: 3rem;
+        font-size: 2.9rem;
+    }
 }
