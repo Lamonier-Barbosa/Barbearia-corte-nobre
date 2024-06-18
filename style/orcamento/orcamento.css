@@ -22,6 +22,7 @@
 .precos-tabela ul {
     padding-bottom: 30px;
     padding-top: 30px;
+    display: grid;
 }
 
 .precos-tabela li {
@@ -36,6 +37,46 @@
 }
 
 .precos-tabela span {
+    display: flex;
+    flex-wrap: nowrap;
     font-weight: bold;
     color: #635903;
+}
+
+@media (max-width: 1000px) {
+    .precos-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        padding-bottom: 20px;
+    }
+
+    .precos-titulo {
+        padding-top: 30px;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .precos-tabela ul {
+        padding: 0px 30px;
+        display: grid;
+    }
+
+    .precos-tabela li {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .precos-tabela li {
+        font-size: 1.5rem;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .precos-section {
+        padding: 30px 10px;
+    }
+
 }
