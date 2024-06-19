@@ -1,10 +1,13 @@
+/* Gobal */
+
+@import "./animacao.css";
+@import "./header.css";
 @import "./global.css";
 @import "./footer.css";
 
 /* Pagina Principal */
-@import "./header.css";
-@import "./pagina-principal/header-index.css";
 @import "./pagina-principal/div-com-logo.css";
+@import "./pagina-principal/header-index.css";
 @import "./pagina-principal/main-index.css";
 
 /* Contatos */
@@ -22,6 +25,3 @@
 
 /* Agracimentos */
 @import "./agradecimento/agradecimento.css";
-
-/* Animação */
-@import "./animacao.css";
