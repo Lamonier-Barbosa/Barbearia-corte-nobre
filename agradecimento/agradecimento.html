@@ -5,26 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Barbearia</title>
-    <link rel="stylesheet" href="../style/agradecimento/agradecimento.css">
+    <link rel="stylesheet" href="../style/style.min.css">
+    <meta name="description" content="Barbearia Corte Nobre.">
+    <link rel="icon" href="../img/pagina-inicial/bigode.svg" type="image/svg+xml">
 </head>
 
 <body class="agradecimento-body">
     <section class="agradecimento-section">
         <div class="agradecimento-container">
             <div class="agradecimento-img">
-                <div class="agradecimento-contorno-svg">
-                    <img src="../img/agradecimento/simbolo-certo.svg" alt="Simbolo correto">
+                <div class="agradecimento-contorno-svg fadeInUp" data-anime="400">
+                    <img class="fadeInUp" data-anime="1000" src="../img/agradecimento/simbolo-certo.svg"
+                        alt="Simbolo correto">
                 </div>
             </div>
             <div class="agradecimento-texto">
-                <h1>Obrigado!</h1>
-                <p>A barbearia Corte Nobre agradece o seu contato,<br>em breve iremos te retornar.</p>
+                <h1 class="fadeInUp" data-anime="400">Obrigado!</h1>
+                <p class="fadeInUp" data-anime="800">A barbearia Corte Nobre agradece o seu contato, em breve iremos te
+                    retornar.</p>
             </div>
-            <div class="agradecimento-botao">
+            <div class="agradecimento-botao fadeInDown" data-anime="1000">
                 <a href="../index.html">Voltar ao Menu</a>
             </div>
         </div>
     </section>
+    <script src="../js/plugins/simple-anime.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
