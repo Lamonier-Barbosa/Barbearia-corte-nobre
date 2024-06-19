@@ -86,7 +86,6 @@
         line-height: 1.5rem;
     }
 
-
     .footer-redes {
         grid-column: 1;
         position: absolute;
@@ -98,10 +97,10 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .footer-contato a {
         font-size: 1rem;
-        grid-column: 2;
+        line-height: 2.5rem;
     }
 
     .footer-endereco {
