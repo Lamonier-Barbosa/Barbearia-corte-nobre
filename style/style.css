@@ -1,12 +1,6 @@
 @import "./global.css";
 @import "./footer.css";
 
-/* Pagina Principal */
-@import "./header.css";
-@import "./pagina-principal/header-index.css";
-@import "./pagina-principal/div-com-logo.css";
-@import "./pagina-principal/main-index.css";
-
 /* Contatos */
 @import "./contato/contatos.css";
 
@@ -25,3 +19,9 @@
 
 /* Animação */
 @import "./animacao.css";
+
+/* Pagina Principal */
+@import "./header.css";
+@import "./pagina-principal/header-index.css";
+@import "./pagina-principal/div-com-logo.css";
+@import "./pagina-principal/main-index.css";
