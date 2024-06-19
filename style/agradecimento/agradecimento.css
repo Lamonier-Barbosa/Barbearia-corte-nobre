@@ -4,16 +4,24 @@
     background: #818181;
 }
 
+.agradecimento-section {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 20px 0 20px;
+}
+
 .agradecimento-container {
-    max-width: 800px;
-    margin: 150px auto;
+    max-width: 700px;
+    margin: 100px auto;
     display: grid;
     justify-content: center;
     background: #f3f3f3;
     border-radius: 20px;
-    padding: 20px 0 0 0;
+    padding: 20px 40px 0 40px;
     box-shadow: 0 0 50px #313131;
 }
+
+
 
 .agradecimento-img {
     padding: 50px 40px 0 40px;
@@ -28,6 +36,7 @@
     margin: 0 auto;
     justify-content: center;
 }
+
 
 .agradecimento-img img {
     max-width: 100px;
@@ -75,4 +84,60 @@
     box-shadow: 0 0 15px #050505;
     border-left: solid 15px #30b603;
     transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    .agradecimento-container {
+        max-width: 700px;
+        margin: 90px auto;
+    }
+
+    .agradecimento-img {
+        padding: 5px 0 0 0;
+    }
+
+    .agradecimento-contorno-svg {
+        display: flex;
+        max-width: 100px;
+        height: 100px;
+        background: #279a00;
+        border-radius: 50%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+
+    .agradecimento-img img {
+        max-width: 50px;
+    }
+
+    .agradecimento-texto {
+        padding: 0 0px 0 0px;
+    }
+
+    .agradecimento-texto h1 {
+        padding-top: 0px;
+        font-size: 2.5rem;
+        line-height: 1rem;
+        color: #2f2f2f;
+    }
+
+    .agradecimento-texto p {
+        padding-top: 10px;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: #494949;
+    }
+
+    .agradecimento-botao {
+        justify-self: center;
+        padding: 0px 0 30px 0;
+    }
+
+    .agradecimento-botao a {
+        width: 200px;
+        height: 80px;
+        font-size: 1.5rem;
+        box-shadow: 0 0 10px #050505;
+    }
 }
