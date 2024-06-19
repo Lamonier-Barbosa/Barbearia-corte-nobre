@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    padding-top: 60px;
+    padding: 60px 20px 0 20px;
 }
 
 .galeria-titulo {
@@ -57,6 +57,7 @@
 
 .galeria-section {
     display: grid;
+    padding: 100px 20px;
 }
 
 .galeria-section:nth-child(odd) {
@@ -65,16 +66,17 @@
 
 .scroll-container {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     max-width: 1200px;
-    gap: 100px;
+    gap: 10px;
 }
 
 .scroll-imagem {
     width: 400px;
     border-radius: 10px;
     border: none;
-    margin: 20px;
+    margin: 0 auto;
 }
 
 .img1 {
@@ -90,22 +92,16 @@
 }
 
 .scroll1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     animation: slidein1 1ms ease-in-out forwards;
     animation-timeline: view();
     animation-range: cover 0% cover 30%;
     color: #aaaaaa;
-    padding: 100px;
 }
 
 .scroll2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     animation: slidein2 1ms ease-in-out forwards;
     animation-timeline: view();
     animation-range: cover 0% cover 30%;
-    padding: 100px;
 }
 
 .scroll2 img {
@@ -114,13 +110,10 @@
 }
 
 .scroll3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     animation: slidein3 1ms ease-in-out forwards;
     animation-timeline: view();
     animation-range: cover 0% cover 30%;
     color: #aaaaaa;
-    padding: 100px;
 }
 
 .scroll-texto {
@@ -174,22 +167,26 @@
     background: #f7f7f7;
 }
 
+.depoimento-bg h1 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 3rem;
+    text-align: center;
+}
+
 .depoimento-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px 20px;
+    gap: 10px;
 }
 
 .depoimento-foto {
     padding: 30px 0px 60px 0px;
 }
 
-.depoimento-foto h1 {
-    padding-bottom: 10px;
-    font-size: 3rem;
-}
 
 .depoimento-foto img {
     border-radius: 30px;
@@ -197,7 +194,7 @@
 }
 
 .depoimento-comentarios {
-    padding: 80px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
 }
 
 .aspas {
@@ -215,4 +212,127 @@
 
 .nome-cliente {
     padding: 10px 0px 80px 6px;
+}
+
+/* Quadro da galeria */
+@media (max-width: 800px) {
+    .galeria-main h1 {
+        font-size: 2rem;
+    }
+
+    .galeria-container {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 60px 20px 0 20px;
+    }
+}
+
+/* Galeria Scroll */
+@media (max-width: 850px) {
+    .scroll-container {
+        grid-template-columns: 1fr;
+    }
+
+    .scroll-imagem {
+        width: 300px;
+    }
+
+    .scroll2 img {
+        grid-column: 1;
+        justify-self: end;
+    }
+
+    .texto-2 {
+        grid-row: 2;
+    }
+
+    .scroll-texto {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .scroll-texto {
+        font-size: 1rem;
+        margin: 0 auto;
+        line-height: 2rem;
+    }
+
+    .galeria-section {
+        padding: 50px 20px;
+    }
+}
+
+/* Depoimentos */
+
+@media (max-width: 1000px) {
+
+    .depoimento-foto {
+        padding: 30px 0px 0px 0px;
+    }
+
+    .depoimento-foto h1 {
+        padding-bottom: 10px;
+        font-size: 3rem;
+    }
+
+    .depoimento-foto img {
+        border-radius: 30px;
+        width: 450px;
+    }
+
+    .depoimento-comentarios {
+        padding: 50px 0px 0px 0px;
+    }
+
+    .aspas {
+        font-size: 60px;
+        line-height: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #635903;
+    }
+
+    .depoimento-texto {
+        padding: 0px 0px 20px 6px;
+        font-size: 1.125rem;
+        color: #292929;
+    }
+
+    .nome-cliente {
+        padding: 0px 0px 30px 6px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .depoimento-container {
+        grid-template-columns: 1fr;
+    }
+
+    .depoimento-foto {
+        justify-self: center;
+        width: 350px;
+    }
+
+    .depoimento-comentarios {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .aspas {
+        padding-top: 30px;
+    }
+
+    .nome-cliente {
+        padding: 0px 0px 10px 6px;
+        border-bottom: dotted 2px #635903;
+    }
+}
+
+@media (max-width: 500px) {
+    .depoimento-bg h1 {
+        font-size: 2.5rem;
+    }
 }
