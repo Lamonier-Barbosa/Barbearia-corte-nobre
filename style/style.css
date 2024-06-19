@@ -21,4 +21,7 @@
 @import "./galeria/galeria.css";
 
 /* Agracimentos */
-@import "./agradecimento/agradecimento.css"
+@import "./agradecimento/agradecimento.css";
+
+/* Animação */
+@import "./animacao.css";

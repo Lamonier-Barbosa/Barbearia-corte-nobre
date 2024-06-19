@@ -165,26 +165,28 @@
 
 .depoimento-bg {
     background: #f7f7f7;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .depoimento-bg h1 {
-    padding-top: 50px;
-    padding-bottom: 10px;
+    padding: 50px 20px 10px 20px;
     font-size: 3rem;
     text-align: center;
 }
 
 .depoimento-container {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 0 20px 0 20px;
     gap: 10px;
 }
 
 .depoimento-foto {
-    padding: 30px 0px 60px 0px;
+    padding: 30px 20px 60px 20px;
 }
 
 
@@ -194,7 +196,7 @@
 }
 
 .depoimento-comentarios {
-    padding: 60px 0px 0px 0px;
+    padding: 60px 20px 0px 20px;
 }
 
 .aspas {
@@ -202,16 +204,17 @@
     line-height: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #635903;
+    padding: 0px 20px 0 10px;
 }
 
 .depoimento-texto {
-    padding: 0px 0px 20px 6px;
+    padding: 0px 20px 20px 20px;
     font-size: 1.125rem;
     color: #292929;
 }
 
 .nome-cliente {
-    padding: 10px 0px 80px 6px;
+    padding: 10px 20px 80px 20px;
 }
 
 /* Quadro da galeria */
@@ -271,7 +274,7 @@
 @media (max-width: 1000px) {
 
     .depoimento-foto {
-        padding: 30px 0px 0px 0px;
+        padding: 30px 10px 0px 10px;
     }
 
     .depoimento-foto h1 {
@@ -285,7 +288,7 @@
     }
 
     .depoimento-comentarios {
-        padding: 50px 0px 0px 0px;
+        padding: 50px 10px 0px 10px;
     }
 
     .aspas {
@@ -296,13 +299,13 @@
     }
 
     .depoimento-texto {
-        padding: 0px 0px 20px 6px;
+        padding: 0px 10px 20px 10px;
         font-size: 1.125rem;
         color: #292929;
     }
 
     .nome-cliente {
-        padding: 0px 0px 30px 6px;
+        padding: 0px 0px 30px 10px;
     }
 
 }
@@ -310,6 +313,8 @@
 @media (max-width: 800px) {
     .depoimento-container {
         grid-template-columns: 1fr;
+        padding: 0 20px 60px 20px;
+        margin: 0 auto;
     }
 
     .depoimento-foto {
@@ -318,7 +323,7 @@
     }
 
     .depoimento-comentarios {
-        padding: 0px 0px 0px 0px;
+        padding: 0px 20px;
     }
 
     .aspas {
@@ -326,13 +331,18 @@
     }
 
     .nome-cliente {
-        padding: 0px 0px 10px 6px;
+        padding: 10px 6px;
         border-bottom: dotted 2px #635903;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
     .depoimento-bg h1 {
         font-size: 2.5rem;
+    }
+
+    .depoimento-foto {
+        justify-self: center;
+        width: 250px;
     }
 }

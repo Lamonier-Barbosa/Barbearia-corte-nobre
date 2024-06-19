@@ -21,10 +21,8 @@
     box-shadow: 0 0 50px #313131;
 }
 
-
-
 .agradecimento-img {
-    padding: 50px 40px 0 40px;
+    padding: 50px 0;
 }
 
 .agradecimento-contorno-svg {
@@ -44,18 +42,18 @@
 
 .agradecimento-texto {
     text-align: center;
-    padding: 0 30px 0 30px;
+    padding: 0 20px 0 20px;
 }
 
 .agradecimento-texto h1 {
-    padding-top: 100px;
+    padding: 30px;
     font-size: 3.5rem;
     line-height: 1rem;
     color: #2f2f2f;
 }
 
 .agradecimento-texto p {
-    padding-top: 20px;
+    padding: 30px;
     font-size: 1.5rem;
     line-height: 2rem;
     color: #494949;
@@ -88,8 +86,7 @@
 
 @media (max-width: 600px) {
     .agradecimento-container {
-        max-width: 700px;
-        margin: 90px auto;
+        padding: 0;
     }
 
     .agradecimento-img {
@@ -112,18 +109,19 @@
     }
 
     .agradecimento-texto {
-        padding: 0 0px 0 0px;
+        padding: 30px 0;
+        margin: 0;
     }
 
     .agradecimento-texto h1 {
-        padding-top: 0px;
+        padding-top: 20px;
         font-size: 2.5rem;
         line-height: 1rem;
         color: #2f2f2f;
     }
 
     .agradecimento-texto p {
-        padding-top: 10px;
+        padding: 10px 10px;
         font-size: 1.5rem;
         line-height: 2rem;
         color: #494949;

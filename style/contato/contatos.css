@@ -273,18 +273,15 @@
     }
 
     .contato-dados {
-        display: grid;
         padding: 20px;
     }
 
     .contato-dados h1 {
-        text-align: center;
         padding-top: 20px;
         padding-bottom: 30px;
     }
 
     .endereco {
-        display: flex;
         gap: 10px;
         font-size: 0.9rem;
     }
@@ -292,14 +289,17 @@
     .endereco,
     .contato {
         margin-top: 1.5rem;
-        justify-self: center;
         padding: 0px;
     }
 
+    .contato a {
+        width: 150px;
+        font-size: 1rem;
+    }
+
     .contato-redes {
-        justify-self: center;
         display: flex;
-        gap: 40px;
+        gap: 50px;
     }
 
     .contato-redes a {
