@@ -50,7 +50,7 @@
 .imagem-de-capa img {
     width: 700px;
     border-radius: 100px;
-    box-shadow: 10px 10px 10px #252525;
+    box-shadow: 10px 10px 30px #252525;
 }
 
 .botao-menu-index {
@@ -85,12 +85,10 @@
     padding: 15px;
     width: 150px;
     text-align: center;
-    box-shadow: 0 0 15px #6a6a6a;
 }
 
 
 .botao-menu-index a:hover {
-    box-shadow: 0 0 20px #1e1e1e;
     background: linear-gradient(#414141, #090909);
 }
 
