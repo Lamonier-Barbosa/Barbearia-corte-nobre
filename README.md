@@ -35,7 +35,7 @@ Todas as imagens e links utilizados neste projetos são fictícios, as imagens, 
 
 Página Inicial do site:
 
-![Logo da Barbearia Corte Nobre](./img/readme/p-inicial.png)
+![Logo da Barbearia Corte Nobre](./img/readme/p-inicial1.png)
 ##
 Página de Galeria:
 
