@@ -69,3 +69,7 @@ Veja você mesmo, Experimente o site [Clicando Aqui!](https://barbearia-corte-no
 ## Contato
 
 Para mais informações, entre em contato conosco pelo email: lamoni_lr@hotmail.com
+
+## Licença
+Este projeto está licenciado sob a Licença MIT.
+
